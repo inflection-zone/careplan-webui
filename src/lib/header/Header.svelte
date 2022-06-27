@@ -1,4 +1,4 @@
-<script lang="ts">
+<!-- <script lang="ts">
 	import { page } from '$app/stores';
 	import logo from './svelte-logo.svg';
 </script>
@@ -29,7 +29,7 @@
 	</nav>
 
 	<div class="corner">
-		<!-- TODO put something else here? github link? -->
+		 TODO put something else here? github link? 
 	</div>
 </header>
 
@@ -121,4 +121,4 @@
 	a:hover {
 		color: var(--accent-color);
 	}
-</style>
+</style> -->

@@ -1,19 +1,19 @@
 <script lang="ts">
-	import Header from '$lib/header/Header.svelte';
+	// import Header from '$lib/header/Header.svelte';
 	import '../app.css';
 </script>
 
-<Header />
+<header />
 
 <main>
 	<slot />
 </main>
 
-<footer>
+<!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
-</footer>
+</footer> -->
 
-<style>
+<!-- <style>
 	main {
 		flex: 1;
 		display: flex;
@@ -42,4 +42,4 @@
 			padding: 40px 0;
 		}
 	}
-</style>
+</style>  -->

@@ -1,4 +1,4 @@
-<script context="module">
+<!-- <script context="module">
 	import { browser, dev } from '$app/env';
 
 	// we don't need any JS on this page, though we'll load
@@ -47,4 +47,4 @@
 		max-width: var(--column-width);
 		margin: var(--column-margin-top) auto 0 auto;
 	}
-</style>
+</style> -->

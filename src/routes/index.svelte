@@ -3,16 +3,20 @@
 </script>
 
 <script lang="ts">
+	import Navbar from "./NavBar/navbar.svelte";
+	import Sidebar from "./Sidebar/sidebar.svelte";
 	import Counter from '$lib/Counter.svelte';
 </script>
+<Navbar />
+<Sidebar />
 
-<svelte:head>
+<!-- <svelte:head>
 	<title>Home</title>
 	<meta name="description" content="Svelte demo app" />
-</svelte:head>
+</svelte:head>  -->
 
-<section>
-	<h1>
+<!-- <section>
+	 <h1>
 		<span class="welcome">
 			<picture>
 				<source srcset="svelte-welcome.webp" type="image/webp" />
@@ -28,9 +32,9 @@
 	</h2>
 
 	<Counter />
-</section>
+</section> 
 
-<style>
+ <style>
 	section {
 		display: flex;
 		flex-direction: column;
@@ -58,4 +62,4 @@
 		top: 0;
 		display: block;
 	}
-</style>
+</style>  -->
