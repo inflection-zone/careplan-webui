@@ -2,9 +2,13 @@
     
     import REAN from '$lib/REAN.png'
   
-    let username, password, email;
+    let username ='';
+    let password ='';
+    let email = '';
     function handleSubmit() {
         alert(` ${username} signup successfully `);
+     username ='';
+     password ='';
     }
 </script>
 
