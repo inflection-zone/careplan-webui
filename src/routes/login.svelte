@@ -1,12 +1,8 @@
 <script>
-	let username, password, email;
-	function handleSubmit() {
-		alert(` ${username} signup successfully `);
-	}
-  
     let username ='';
     let password ='';
     let email = '';
+
     function handleSubmit() {
         alert(` ${username} signup successfully `);
      username ='';
