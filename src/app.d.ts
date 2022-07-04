@@ -5,7 +5,10 @@
 declare namespace App {
 	interface Locals {
 		userid: string;
-	}
+	},
+	declare module '@fortawesome/pro-solid-svg-icons/index.es' {
+		export * from '@fortawesome/pro-solid-svg-icons';
+	  }
 
 	// interface Platform {}
 
