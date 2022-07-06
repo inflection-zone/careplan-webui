@@ -7,19 +7,8 @@
 
  onMount(() => {
    themeChange(false)
-
-
- 
  })
-
-
-
-
-
-
-
 </script>
-
 
 <div class="navbar ">
 	<div class="flex-1">
@@ -64,10 +53,7 @@
       </label>
       <ul tabindex="0" class="menu menu-vertical dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-64 h-screen">
         <li>
-        
-            
-             
-            <div class="flex flex-col">
+         <div class="flex flex-col">
           <h2 class=" font-semibold text-2xl">Profile</h2>
           <a>
             <div class="avatar online">
@@ -98,21 +84,10 @@
             <option value="garden">garden</option>
             <option value="forest">forest</option>
             <option value="aqua">aqua</option>
-         
-            
-          </select>
-
-
-         </div>
-
-
-
-
+         </select>
+        </div>
         <li><a>Logout</a></li>
       </ul>
-    </div>
-
-	
-			
+    </div>		
 		</div>
 	</div>

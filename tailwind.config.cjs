@@ -1,11 +1,15 @@
 const config = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
-     daisyui:{
-	themes: [
-		
-		"light", "dark", "cupcake", "bumblebee", "emerald", "corporate","synthwave", "retro", "cyberpunk", "valentine", "halloween", "garden","forest", "aqua", "lofi", "pastel", "fantasy", "wireframe", "black","luxury", "dracula", "cmyk", "autumn", "business", "acid", "lemonade","night", "coffee", "winter"],	
-	},
+	theme: {
+    
+		extend: {},
+		backgroundImage: {
+		  'back-ground': 
+		  "linear-gradient(to bottom, white 0%, white 53%, #6a1eb1 10%, #6a1eb1 10%)",
+		  },
+	  },
+
 	plugins: [require("daisyui")],
 };
 

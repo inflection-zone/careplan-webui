@@ -11,8 +11,7 @@
 			<div class="text-sm breadcrumbs">
 				<ul>
 					<li><a>Home</a></li>
-					<li><a>Documents</a></li>
-					<li>Add Document</li>
+					<li><a>Clients</a></li>
 				</ul>
 			</div>
 		</div>
@@ -77,8 +76,8 @@
 	<div class="drawer-side">
 		<label for="my-drawer-2" class="drawer-overlay" />
 		<ul class="menu p-4 overflow-y-auto w-72 bg-base-100  text-base-content">
-			<li><a>Home</a></li>
-			<li><a>Clients</a></li>
+			<li><a href = "">Home</a></li>
+			<li><a href="/api-client/view">Clients</a></li>
 		</ul>
 	</div>
 </div>

@@ -3,20 +3,11 @@
 
 <script>
 
-import Navbar from "./navBar/navbar.svelte";
-	
-	
-	import Sidebar from "./sidebar/sidebar.svelte";	
-
+import Login from "./login.svelte";
 
 </script>
 
-<Navbar />
-
-
-<Sidebar />
-
-
+<Login/>
 <main>
 	<div>
 		
