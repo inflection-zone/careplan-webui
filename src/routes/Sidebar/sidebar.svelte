@@ -1,6 +1,6 @@
 <script>
-	import Linechart from '../linechart/linechart.svelte';
-	import Barchart from '../barchart/barchart.svelte';
+	import Linechart from "../linechart/linechart.svelte";
+	
 </script>
 
 <div class="drawer drawer-side">
@@ -23,7 +23,7 @@
 					<h2 class="card-title">Clients</h2>
 					<h2 class="card-title">5</h2>
 					<figure class="px-1 pt-1">
-						<Barchart class="rounded-xl" />
+						<!-- <Barchart class="rounded-xl" /> -->
 					</figure>
 				</div>
 			</div>
@@ -42,7 +42,7 @@
 					<h2 class="card-title">Careplans</h2>
 					<h2 class="card-title">22</h2>
 					<figure class="px-1 pt-1">
-						<Barchart class="rounded-xl" />
+						<!-- <Barchart class="rounded-xl" /> -->
 					</figure>
 				</div>
 			</div>
