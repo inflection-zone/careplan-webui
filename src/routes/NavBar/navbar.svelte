@@ -10,9 +10,9 @@
 	});
 </script>
 
-<div class="navbar">
+<div class="navbar bg-[#7165e3]">
 	<div class="flex-1">
-		<button class="btn btn-square btn-ghost">
+		<!-- <button class="btn btn-square btn-ghost">
 			<label for="my-drawer-2" class="btn btn-primary ">
 				<svg
 					xmlns="http://www.w3.org/2000/svg"
@@ -27,7 +27,7 @@
 					/></svg
 				>
 			</label>
-		</button>
+		</button> -->
 	</div>
 
 	<div class="flex-none">
