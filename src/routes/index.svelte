@@ -1,7 +1,7 @@
 <script>
 
-import Navbar from "./navBar/navbar.svelte";
-import Sidebar from "./Sidebar/sidebar.svelte";
+import Navbar from "../components/navbar/navbar.svelte";
+import Sidebar from "../components/sidebar/sidebar.svelte"
 </script>
 
 <Navbar />

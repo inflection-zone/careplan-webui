@@ -1,10 +1,9 @@
 <script>
-  
 	import BarchartLogo from './barcharts.png';
 	import LinechartLogo from './linecharts.png';
 	import bigLinechartLogo from './bigLinecharts.png';
+	
 </script>
-
 
 <main>
 	<div class="h-screen w-full box-border ">
@@ -65,6 +64,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="flex flex-row justify-center mt-12 ">
 			<div class="card rounded-md justify-center bg-[#ECE4FC] shadow-xl w-8/12">
 				<div class="card-body items-center text-center">
@@ -72,10 +72,10 @@
 					<figure class="max-w-screen-2xl">
 						<img src={bigLinechartLogo} class="h-14 " />
 					</figure>
-					<div class="flex flex-col space-y-2 justify-start ">
+					<div class="grid grid-rows-2 grid-flow-col gap-2">
 						
-                        
 					</div>
+					
 				</div>
 			</div>
 		</div>
