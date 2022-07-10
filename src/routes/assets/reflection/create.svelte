@@ -10,7 +10,7 @@
 <form class="w-full max-w-4xl  bg-[#ECE4FC] mt-24  rounded-lg mx-auto">
 	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
 		<div class="ml-3 relative flex flex-row text-white text-xl">
-			Create New Video
+			Create New Reflection
 			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
 		</div>
 	</div>
@@ -23,38 +23,23 @@
 			<input
 				type="text"
 				required
-				placeholder="Enter video name here..."
+				placeholder="Enter reflection name here..."
 				class="input input-bordered input-info w-full "
 			/>
 		</div>
 	</div>
-	<div class="flex items-center mb-4 my-4 mx-16">
+	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label class="lable-text"> Transcript </label>
+			<label class="lable-text"> Description </label>
 		</div>
 		<div class="w-2/3">
-			<input
-				type="text"
-				placeholder="Enter vide Transcript here..."
-				class="input input-bordered input-info w-full "
+			<textarea
+				class="textarea textarea-info w-full"
+				placeholder="Enter reflection description here..."
 			/>
 		</div>
 	</div>
-	<div class="flex items-center mb-4 my-4 mx-16">
-		<div class="w-1/3">
-			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label class="lable-text"> Url </label>
-		</div>
-		<div class="w-2/3">
-			<input
-				type="text"
-				placeholder="Enter video link url here..."
-				class="input input-bordered input-info w-full "
-			/>
-		</div>
-	</div>
-
 	<div class="flex items-center mb-4 my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
