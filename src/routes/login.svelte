@@ -1,4 +1,5 @@
 <script>
+<<<<<<< HEAD
     // @ts-ignore
     let username, password, email;
     function handleSubmit() {
@@ -8,6 +9,18 @@
     
 	import { onMount } from 'svelte'
 	import { themeChange } from 'theme-change'
+=======
+    let username ='';
+    let password ='';
+    let email = '';
+
+    function handleSubmit() {
+        alert(` ${username} signup successfully `);
+     username ='';
+     password ='';
+    }
+</script>
+>>>>>>> 2bdc57a5f09a3504e9dd19a494b8856af6899914
 
 	 onMount(() => {
 	   themeChange(false)
