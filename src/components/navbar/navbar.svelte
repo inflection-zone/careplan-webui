@@ -31,6 +31,7 @@
 
 	<div class="flex-none">
 		<div class="dropdown dropdown-end">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label tabindex="0" class="btn btn-ghost btn-circle">
 				<div class="indicator">
 					<Fa icon={faHome} size="lg" />
@@ -39,6 +40,7 @@
 		</div>
 
 		<div class="dropdown dropdown-end">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label tabindex="0" class="btn btn-ghost btn-circle">
 				<div class="indicator">
 					<Fa icon={faBell} size="lg" />
@@ -48,6 +50,7 @@
     <div class="dropdown dropdown-end">
       <label tabindex="0" class="btn btn-ghost btn-circle avatar">
         <div class="w-10 rounded-full">
+          <!-- svelte-ignore a11y-missing-attribute -->
           <img src="https://api.lorem.space/image/face?hash=33791" />
         </div>
       </label>
@@ -92,3 +95,4 @@
     </div>		
 		</div>
 	</div>
+

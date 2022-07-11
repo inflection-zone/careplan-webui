@@ -1,16 +1,15 @@
-const config = {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-
 	theme: {
-    
-		extend: {},
-		backgroundImage: {
-		  'back-ground': 
-		  "linear-gradient(to bottom, white 0%, white 53%, #6a1eb1 10%, #6a1eb1 10%)",
-		  },
-	  },
-
+	  
+	  extend: {},
+	  backgroundImage: {
+		'back-ground': 
+		"linear-gradient(to bottom, white 0%, white 53%, #7165E3 10%, #7165E3 10%)",
+		},
+	},
+	
 	plugins: [require("daisyui")],
-};
-
-module.exports = config;
+  }
+  
