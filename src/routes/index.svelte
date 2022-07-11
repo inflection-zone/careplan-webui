@@ -2,11 +2,11 @@
 	import Login from "./login.svelte";
 
 // import Navbar from "../components/navbar/navbar.svelte";
-// import Sidebar from "../components/sidebar/sidebar.svelte"
+//  import Sidebar from "../components/sidebar/sidebar.svelte";
 </script>
 
-<!-- <Navbar />
-<Sidebar/> -->
+ <!-- <Navbar /> -->
+ <!-- <Sidebar/>  -->
 
 <Login />
 
