@@ -1,6 +1,3 @@
-
-
-
 <script>
 
 import Login from "./login.svelte";
