@@ -1,61 +1,54 @@
-<script>
-    let username ='';
-    let password ='';
-    let email = '';
 
+<script>
+    // @ts-ignore
+    let username, password, email;
     function handleSubmit() {
+        // @ts-ignore
         alert(` ${username} signup successfully `);
-     username ='';
-     password ='';
-    }
+    }    
+	import { onMount } from 'svelte'
+	import { themeChange } from 'theme-change'
+
+	 onMount(() => {
+	   themeChange(false)
+	 })
 </script>
 
-<main class="box-border h-screen">
-  <div class="navbar bg-[#7165e3]"></div>
-  
-		<div class=" flex justify-center flex-col  items-center w-full h-full mx-auto">
-			<form
-				on:submit|preventDefault={handleSubmit}
-				class="bg-gray-100 rounded-lg p-8  flex flex-col w-screen max-w-xs "
-			>
-				<div class="form-control justify-center w-full max-w-xs ">
-					<label class="label">
-						<span class="label-text">Username / Email</span>
-					
-					</label>
-					<input
-						type="text"
-						required
-						bind:value={username}
-						placeholder="Type here"
-						class="input input-bordered input-info w-full max-w-xs mb-3 form-control"
-					/>
-					<label class="label">
-						<span class="label-text">Password / Otp</span>
-						<span on:click class="label-text-alt ">Generate Otp</span>
-					</label>
-					<input
-						type="password"
-						required
-						bind:value={password}
-						placeholder="Type here"
-						class="input input-bordered input-info w-full max-w-xs "
-					/>
-					<label class="label">
-						<span class="label-text-alt">Forgot Password ?</span>
-					</label>
-					<button class="btn btn-primary max-w-xs ">Login</button>
-				
-				</div>
-			</form>
-        
-      <div ></div>
-		</div>
-	
-    <footer class="footer footer-center p-4 bg-base-300 text-base-content">
-      <div>
-        <p>Copyright © 2022 - All right reserved by ACME Industries Ltd</p>
-      </div>
-    </footer>
-	
+<main class="w-screen overflow-x-auto self-center">
+<div class="bg-back-ground w-screen">
+
+	<div class="h-10 w-screen drop-shadow-2xl mb-4 bg-[#7165E3]"></div>	
+	<center>
+			<div class=" flex justify-center flex-col items-center m-14">
+				<img class="ct-image w-36 mb-5" alt="logo" src="https://www.reanfoundation.org/wp-content/uploads/2021/10/REAN-Foundation-brand-Logo.png">
+				<form on:submit|preventDefault={handleSubmit}  class="bg-[#ECE4FC] drop-shadow-2xl p-8 pb-1 pt-5 w-70 rounded-lg mt-5">
+      				<div class="form-control justify-center w-full mt-5 h-50">
+     					<!-- svelte-ignore a11y-label-has-associated-control -->
+        				<label class="label">
+          					<span class="label-text text-[#5832A1]">Username / Email</span>
+           					<span class="label-text-alt"></span> 
+        				</label>
+        				<input type="text" required bind:value={username} class="input input-bordered rounded-lg w-82 mb-3 h-10" />
+         				<!-- svelte-ignore a11y-label-has-associated-control -->
+        				<label class="label">
+            				<span class="label-text text-[#5832A1]">Password / OTP</span>
+            				<span on:click class="label-text text-[#5832A1]"><b>Generate OTP</b></span>
+          				</label>
+          				<input type="password" required bind:value={password} class="input input-bordered rounded-lg w-82 h-10" />
+           				<!-- svelte-ignore a11y-label-has-associated-control -->
+          				<label class="label">
+            				<span class="label-text text-[#5832A1]"><b>Forgot Password?</b></span>
+          				</label><br>
+						<label>
+          					<button class=" w-40 ml-52 h-10 mb-8 rounded-lg text-[#ffffff] bg-[#5832A1]">Login</button>
+		  				</label>
+    				</div> 
+				</form>
+				<div class="h-20 mb-4 w-screen bg-[#7165E3]"></div>
+			</div>
+		</center>
+		<footer class="footer footer-center h-11 text-[#ffffff] bg-[#5832A1]">	
+			  <p>© 2022 REAN Foundation</p>
+		</footer>
+	</div>
 </main>
