@@ -1,6 +1,6 @@
 <script>
 	import Fa from 'svelte-fa';
-	import {  faBell, faHome } from '@fortawesome/free-solid-svg-icons';
+	import { faHome, faBell }from '@fortawesome/free-solid-svg-icons';
  
     import { onMount } from 'svelte';
  import { themeChange } from 'theme-change';
@@ -10,7 +10,7 @@
  })
 </script>
 
-<div class="navbar ">
+<div class="navbar bg-[#7165E3] ">
 	<div class="flex-1">
 		<button class="btn btn-square btn-ghost">
 			<label for="my-drawer-2" class="btn btn-primary ">
@@ -70,6 +70,7 @@
         </li>
          <div class="flex justify-center">
           <select data-choose-theme class="select select-bordered ">
+            <option value="mytheme">mytheme</option>
             <option value="light">Light</option>
             <option value="corporate">Corporate</option>
             <option value="dark">Dark</option>

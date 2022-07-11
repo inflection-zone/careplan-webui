@@ -1,6 +1,6 @@
 <script>
-	import Linechart from '../linechart/linechart.svelte';
-	import Barchart from '../barchart/barchart.svelte';
+	import Linechart from '../../../components/linechart/linechart.svelte';
+	import Barchart from '../../../components/barchart/barchart.svelte';
 </script>
 
 <div class="drawer drawer-side">
@@ -8,10 +8,10 @@
 
 	<div class="drawer-content">
 		<div class=" ml-24 my-1 ">
-			<div class="text-sm breadcrumbs">
+			<div class=" breadcrumbs">
 				<ul>
 					<li><a>Home</a></li>
-					<li><a>Clients</a></li>
+					<li><a href="/api-client/view">Clients</a></li>
 				</ul>
 			</div>
 		</div>
