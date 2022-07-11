@@ -3,12 +3,18 @@
 	import '../app.css';
 </script>
 
-<header />
+<!-- <header /> -->
 
 <main>
 	<slot />
+	
 </main>
 
+<!-- <footer class="footer footer-center p-4 bg-base-300 text-base-content">
+	<div>
+	  <p>2022 REAN Foundation </p>
+	</div>
+  </footer> -->
 <!-- <footer>
 	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
 </footer> -->
