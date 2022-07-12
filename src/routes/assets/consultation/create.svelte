@@ -1,22 +1,19 @@
 <script>
     import Fa from 'svelte-fa';
-    import { faCalendar,faMultiply} from '@fortawesome/free-solid-svg-icons';
-    
-    </script>
+    import { faMultiply} from '@fortawesome/free-solid-svg-icons';
+    import Tags from '../../../components/tags.svelte';
+</script>
 
 
-<div class="inline-block pl-10 text-lg breadcrumbs text-[#5832A1]">
+<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
     <ul>
-        <li>
-            <a>Assets</a>   
-        </li>
-        <li>
-            <a>Consultation</a>
-        </li> 
+        <li><a href="/">Home</a></li>
+        <li><a href="">Assets</a></li>
+        <li><a href="">Consultation</a></li>
         <li>Create New</li>
     </ul>
 </div>
-    
+
 <div class=" flex justify-center flex-col items-center ">
     <form class="w-full max-w-4xl bg-[#ECE4FC] mt-20 rounded-lg mx-auto">
         <div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
@@ -34,7 +31,7 @@
                 </label>
             </div>
             <div class="w-2/3">
-                <input type="text" required placeholder="" class="input input-bordered input-info w-full "/>
+                <input type="text" required placeholder="Enter consultation name here..." class="input input-bordered input-info w-full "/>
             </div>
         </div>
 
@@ -47,7 +44,7 @@
             </div>
 
             <div class="w-2/3">
-                <textarea class="textarea textarea-info w-full" placeholder="" />
+                <textarea class="textarea textarea-info w-full" placeholder="Enter consultation description here..." />
             </div>
         </div>
 
@@ -55,13 +52,13 @@
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
                 <label class="lable-text" >
-                    Consultation Type
+                    ConsultationType
                 </label>
             </div>
                 
             <div class="w-2/3">
                 <select class="select select-info w-full ">
-                    <option disabled selected>Select Consultation Type</option>
+                    <option disabled selected>Select consultation type</option>
                     <option>Tele-consultation</option>
                     <option>Visit-consultation</option>
                     <option>Other</option>
@@ -78,7 +75,7 @@
             </div>
 
             <div class="w-2/3">
-                <input type="text" placeholder="" class="input input-bordered input-info w-full "/>
+                <Tags placeholder={'Enter a tags here...'} />
             </div>
         </div>
 

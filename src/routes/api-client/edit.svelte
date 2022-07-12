@@ -1,0 +1,142 @@
+<script>
+	import Fa from 'svelte-fa';
+	import { faCalendar, faMultiply } from '@fortawesome/free-solid-svg-icons';
+	import Navbar from '../../components/navbar/navbar.svelte';
+</script>
+
+<Navbar />
+
+<div class=" breadcrumbs text-3xl text-[#7165E3] ml-14 mt-10">
+	<ul>
+		<li><a href="/api-client">Home</a></li>
+		<li><a href="/api-client/view">Clients</a></li>
+		<li>Edit</li>
+	</ul>
+</div>
+
+<div class=" flex justify-center mt-5 flex-col items-center ">
+	<form class="w-full max-w-4xl bg-[#ECE4FC] rounded-lg mx-auto">
+		<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
+			<div class="ml-3 relative flex flex-row text-white text-xl">
+				Edit Client
+				<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+			</div>
+		</div>
+
+        <div class="flex items-center mb-4 mt-10 mx-16">
+            <div class="w-1/3">
+                <!-- svelte-ignore a11y-label-has-associated-control -->
+                <label class="lable-text text-[#5832A1]"> Client Code </label>
+            </div>
+            <div class="w-2/3 text-[#5832A1]">
+                <p>JNVKSORG</p>
+            </div>
+        </div>
+		<div class="flex items-center mb-4 mt-10 mx-16">
+			<div class="w-1/3">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Name* </label>
+			</div>
+			<div class="w-2/3">
+				<input
+					type="text"
+					required
+					placeholder="Enter client name here..."
+					class="input input-bordered input-info w-full "
+				/>
+			</div>
+		</div>
+
+		<div class="flex items-center my-4 mx-16">
+			<div class="w-1/3">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Contact First Name </label>
+			</div>
+			<div class="w-2/3">
+				<input
+					type="text"
+					placeholder="Enter client first name of the client contact person here..."
+					class="input input-bordered input-info w-full "
+				/>
+			</div>
+		</div>
+
+		<div class="flex items-center my-4 mx-16">
+			<div class="w-1/3">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Contact Last Name </label>
+			</div>
+			<div class="w-2/3">
+				<input
+					type="text"
+					placeholder="Enter client last name of the client contact person here..."
+					class="input input-bordered input-info w-full "
+				/>
+			</div>
+		</div>
+
+		<div class="flex items-center my-4 mx-16 ">
+			<div class="w-1/4">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Phone* </label>
+			</div>
+			<div class="w-1/4 ">
+				<select class="select select-info w-28 ml-16 ">
+					<option>+91</option>
+					<option>+94</option>
+					<option>+93</option>
+				</select>
+			</div>
+			<div class="w-2/4">
+				<input
+					type="number"
+					placeholder="Enter client phone here..."
+					class="input input-bordered input-info w-full max-w-md"
+				/>
+			</div>
+		</div>
+
+		<div class="flex items-center my-4 mx-16">
+			<div class="w-1/3">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Email* </label>
+			</div>
+			<div class="w-2/3">
+				<input
+					type="email"
+					required
+					placeholder="Enter client email here..."
+					class="input input-bordered input-info w-full "
+				/>
+			</div>
+		</div>
+
+		<div class="flex items-centerm my-4 mx-16">
+			<div class="w-1/3">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Valid Till </label>
+			</div>
+			<div class="w-2/3">
+				<div class="relative flex items-center ">
+					<input
+						type="text"
+						required
+						placeholder="05-07-2022"
+						class="input input-bordered input-info w-full "
+					/>
+					<Fa icon={faCalendar} size="lg" class="absolute right-0 pr-3  pointer-events-none" />
+				</div>
+			</div>
+		</div>
+
+		<div class="flex items-center gap-10 my-10 mx-16">
+			<div class="w-3/6" />
+            <div class="w-1/4 ">
+				<button class="btn btn-primary w-full "> Reset </button>
+			</div>
+			<div class="w-1/4 ">
+				<button class="btn btn-primary w-full"> Submit </button>
+			</div>
+		</div>
+	</form>
+</div>

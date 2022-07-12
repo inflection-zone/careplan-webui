@@ -1,6 +1,7 @@
 <script>
     import Fa from 'svelte-fa';
-    import { faCalendar,faMultiply} from '@fortawesome/free-solid-svg-icons';
+    import { faMultiply} from '@fortawesome/free-solid-svg-icons';
+    import Tags from '../../../components/tags.svelte';
 </script>
 
 <!-- <div class="h-10 w-screen mb-4 bg-[#7165E3]"></div>
@@ -10,14 +11,11 @@
     </svg>
 </button> -->
 
-<div class="inline-block pl-10 text-lg breadcrumbs text-[#5832A1]">
-    <ul> 
-        <li>
-            <a>Assets</a>
-        </li>
-        <li>
-            <a>Checkup</a>
-        </li> 
+<div class=" breadcrumbs text-lg text-[#7165E3] ml-14 mt-10">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="">Assets</a></li>
+        <li><a href="">Checkup</a></li>
         <li>Create New</li>
     </ul>
 </div>
@@ -35,12 +33,12 @@
                 <div class="w-1/3">
                     <!-- svelte-ignore a11y-label-has-associated-control -->
                     <label class="lable-text" >
-                        Name *
+                        Name*
                     </label>
                 </div>
 
                 <div class="w-2/3">
-                    <input type="text" required placeholder="" class="input input-bordered input-info w-full "/>
+                    <input type="text" required placeholder="Enter checkup name here..." class="input input-bordered input-info w-full "/>
                 </div>
             </div>
 
@@ -53,7 +51,7 @@
                 </div>
 
                 <div class="w-2/3">
-                    <textarea class="textarea textarea-info w-full" placeholder="" />
+                    <textarea class="textarea textarea-info w-full" placeholder="Enter checkup description here..." />
                 </div>
             </div>
 
@@ -66,7 +64,7 @@
                 </div>
 
                 <div class="w-2/3">
-                    <input type="text" placeholder="" class="input input-bordered input-info w-full "/>
+                    <Tags placeholder={'Enter a tags here...'} />
                 </div>
             </div>
 
