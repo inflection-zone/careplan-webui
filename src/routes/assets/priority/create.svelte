@@ -1,12 +1,18 @@
 <script>
 	import Fa from 'svelte-fa';
 	import { faMultiply } from '@fortawesome/free-solid-svg-icons';
-	// import Tags from 'svelte-tags-input'
-	// import Navbar from "../../../components/navbar/navbar.svelte";
-	// let tags = ["Add", "Tags", "here",];
+	import Tags from '../../../components/tags.svelte';
 </script>
 
 <!-- <Navbar/> -->
+<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="">Assets</a></li>
+		<li><a href="">Action Plan</a></li>
+		<li>Create New Priority</li>
+	</ul>
+</div>
 <form class="w-full max-w-4xl  bg-[#ECE4FC] mt-24  rounded-lg mx-auto">
 	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
 		<div class="ml-3 relative flex flex-row text-white text-xl">
@@ -46,11 +52,10 @@
 			<label class="lable-text"> Tags </label>
 		</div>
 		<div class="w-2/3">
-			<div class="input input-bordered input-info w-full ">
-				<!-- <Tags/> -->
-			</div>
+			<Tags placeholder={'Enter a tags here...'} />
 		</div>
 	</div>
+
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
