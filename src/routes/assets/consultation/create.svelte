@@ -61,7 +61,7 @@
                 
             <div class="w-2/3">
                 <select class="select select-info w-full ">
-                    <option disabled selected>Select Consultation Type</option>
+                    <option disabled selected>Select consultation type</option>
                     <option>Tele-consultation</option>
                     <option>Visit-consultation</option>
                     <option>Other</option>

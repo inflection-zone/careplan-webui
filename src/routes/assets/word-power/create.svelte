@@ -10,7 +10,7 @@
 <form class="w-full max-w-4xl  bg-[#ECE4FC] mt-24  rounded-lg mx-auto">
 	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
 		<div class="ml-3 relative flex flex-row text-white text-xl">
-			Create New word power
+			Create New Word Power
 			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
 		</div>
 	</div>
@@ -43,7 +43,7 @@
 	<div class="flex items-center mb-4 my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label class="lable-text"> AdditionalResources </label>
+			<label class="lable-text"> Additional Resources </label>
 		</div>
 		<div class="w-2/3">
 			<div class="input input-bordered input-info w-full ">

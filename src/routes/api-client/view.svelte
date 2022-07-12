@@ -1,79 +1,95 @@
 <script>
 	import Fa from 'svelte-fa';
-	import { faCirclePlus, faPencil, faTrash, faSearch } from '@fortawesome/free-solid-svg-icons';
-	import Sidebar from '../../components/sidebar/sidebar.svelte';
-	//  import { paginate, LightPaginationNav } from 'svelte-paginate'
-	import Navbar from '../../components/navbar/navbar.svelte';
-	let columns = ['Client', 'Contact Name', 'Phone', 'Email', 'Onbording Date'];
-	let data = [
-		['Janvikas', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Rean', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Janvikas', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['ABCD', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Rean', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Janvikas', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Rean', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Rean', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Janvikas', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020'],
-		['Rean', 'John Doe', '+91 131234565432', 'john@example.com', '01-03-2020']
-	];
+	import { faMultiply, faPen, faCopy, faEye } from '@fortawesome/free-solid-svg-icons';
+
+	// @ts-ignore
 </script>
 
-<Navbar />
-<Sidebar />
-<div class=" flex justify-center flex-col  items-center mx-14 ">
-	<div class="flex flex-row ">
-		<div class=" form-control ">
-			<h1 class="mb-3 " />
-			<div class="relative flex items-center ">
-				<input type="text" placeholder="Search" class="input input-bordered w-96" />
-				<Fa icon={faSearch} size="lg" class="absolute right-0 pr-3  pointer-events-none" />
-			</div>
-		</div>
-		<div>
-			<Fa icon={faCirclePlus} size="4x" class="ml-10" />
-			<p class="ml-10 mt-2">Add New</p>
-		</div>
-	</div>
-
-	<table class="table w-full">
-		<!-- head -->
-		<thead>
-			<tr>
-				<th />
-				{#each columns as columnHeading}
-					<th>{columnHeading}</th>
-				{/each}
-				<th />
-				<th />
-			</tr><tr />
-		</thead>
-		<tbody>
-			{#each data as row, index}
-				<tr>
-					<td>{(index = index + 1)}.</td>
-
-					{#each row as cell}
-						<td>{cell}</td>
-					{/each}
-					<td>
-						<Fa icon={faPencil} size="lg" />
-					</td>
-					<td>
-						<Fa icon={faTrash} size="lg" />
-					</td>
-				</tr>
-			{/each}
-		</tbody>
-	</table>
-
-	<div class="btn-group my-6">
-		<button class="btn">1</button>
-		<button class="btn ">2</button>
-		<button class="btn">3</button>
-		<button class="btn">4</button>
-		<button class="btn">5</button>
-		<button class="btn">6</button>
-		<button class="btn">7</button>
-	</div>
+<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
+	<ul>
+		<li><a href="/">Home</a></li>
+		<li><a href="">Clients</a></li>
+		<li>View</li>
+	</ul>
 </div>
+
+<form class="w-full max-w-4xl bg-[#ECE4FC] mt-12 rounded-lg mx-auto">
+	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
+		<div class="ml-3 relative flex flex-row text-white text-xl">
+			Client - Jan Vikas
+			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+		</div>
+	</div>
+
+	<div class="flex items-center mb-8 mt-10 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text "> Name </label>
+		</div>
+		<div class="w-2/3 ">Jan Vikas</div>
+	</div>
+
+	<div class="flex items-center my-8 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text ">Contact Name </label>
+		</div>
+		<div class="w-2/3 ">
+			<p>John Doe</p>
+		</div>
+	</div>
+
+	<div class="flex items-center my-8 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text "> Phone </label>
+		</div>
+		<div class="w-2/3">+91-10912345334</div>
+	</div>
+
+	<div class="flex items-center my-8 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text "> Email </label>
+		</div>
+		<div class="w-2/3 ">
+			<p>john.Doe@Janvikas.com</p>
+		</div>
+	</div>
+
+	<div class="flex items-center my-8 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text "> API Key </label>
+		</div>
+		<div class="w-2/6 ">xxxxxx-xxxxxx-xxxxxx-xxxxxx</div>
+		<div class="flex flex-row space-x-4 ml-4 mt-2">
+			<Fa icon={faCopy} size="sm" />
+			<Fa icon={faEye} size="sm" class="ml-8" />
+		</div>
+		<div class="flex flex-row space-x-4 ml-8 mt-2 italic hover:underline">
+			<a href="">Generate New</a>
+		</div>
+	</div>
+
+	<div class="flex items-center my-8 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text "> Valid Till </label>
+		</div>
+		<div class="w-2/3 ">September 4, 2023</div>
+	</div>
+
+	<div class="flex items-center mt-10 mx-16">
+		<div class="w-5/6" />
+		<div class="w-1/6 ">
+			<a href="/api-client/edit">
+				<button class="btn  btn-outline w-full mb-10 mr-4">
+					Edit
+
+					<Fa icon={faPen} size="lg" class="ml-5" />
+				</button>
+			</a>
+		</div>
+	</div>
+</form>

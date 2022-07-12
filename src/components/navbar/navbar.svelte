@@ -1,4 +1,5 @@
 <script>
+	// @ts-nocheck
 	import Fa from 'svelte-fa';
 	import { faBell, faHome } from '@fortawesome/free-solid-svg-icons';
 

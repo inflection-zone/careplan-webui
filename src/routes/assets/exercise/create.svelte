@@ -61,7 +61,7 @@
 
             <div class="w-2/3">
                 <select class="select select-info w-full ">
-                    <option disabled selected>Select Exercise Type</option>
+                    <option disabled selected>Select exercise type</option>
                     <option >Strength</option> 
                     <option >Aerobic</option>
                     <option >Balance</option>
@@ -81,7 +81,7 @@
 
             <div class="w-2/3">
                 <select class="select select-info w-full ">
-                    <option disabled selected>Select Intensity Level</option>
+                    <option disabled selected>Select intensity level</option>
                     <option >None</option> 
                     <option >Minimal</option>
                     <option >Moderate</option>
