@@ -54,7 +54,7 @@
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label class="lable-text"> Appointment Type </label>
+			<label class="lable-text"> AppointmentType </label>
 		</div>
 		<div class="w-2/3">
 			<select class="select select-info w-full ">

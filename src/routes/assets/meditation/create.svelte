@@ -1,17 +1,14 @@
 <script>
     import Fa from 'svelte-fa';
-    import { faCalendar,faMultiply} from '@fortawesome/free-solid-svg-icons';
-    
+    import { faMultiply} from '@fortawesome/free-solid-svg-icons';
+    import Tags from '../../../components/tags.svelte';
 </script>
     
-<div class="inline-block pl-10 text-lg breadcrumbs text-[#5832A1]">
+<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
     <ul>
-        <li>
-            <a>Assets</a>
-        </li>
-        <li>
-            <a>Meditation</a>
-        </li> 
+        <li><a href="/">Home</a></li>
+        <li><a href="">Assets</a></li>
+        <li><a href="">Meditation</a></li>
         <li>Create New</li>
     </ul>
 </div>
@@ -34,7 +31,7 @@
             </div>
 
             <div class="w-2/3">
-                <input type="text" required placeholder="" class="input input-bordered input-info w-full "/>
+                <input type="text" required placeholder="Enter meditation name here..." class="input input-bordered input-info w-full "/>
             </div>
         </div>
             
@@ -47,7 +44,7 @@
             </div>
             
             <div class="w-2/3">
-                <textarea class="textarea textarea-info w-full" placeholder="" />
+                <textarea class="textarea textarea-info w-full" placeholder="Enter meditation description here..." />
             </div>
         </div>
         
@@ -55,13 +52,13 @@
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
                 <label class="lable-text" >
-                    Meditation Type 
+                    MeditationType 
                 </label>
             </div>
             
             <div class="w-2/3">
                 <select class="select select-info w-full ">
-                    <option disabled selected>Select Meditation Type</option>
+                    <option disabled selected>Select meditation type</option>
                     <option >Mindfulness</option>
                     <option >Spiritual</option>
                     <option >Focused</option>
@@ -77,7 +74,7 @@
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
                 <label class="lable-text" >
-                    Recommended Duration Min
+                    RecommendedDurationMin
                 </label>
             </div>
             
@@ -95,7 +92,7 @@
             </div>
             
             <div class="w-2/3">
-                <input type="text" placeholder="" class="input input-bordered input-info w-full "/>
+                <Tags placeholder={'Enter a tags here...'} />
             </div>
         </div>
         

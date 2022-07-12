@@ -1,17 +1,14 @@
 <script>
     import Fa from 'svelte-fa';
-    import { faCalendar,faMultiply} from '@fortawesome/free-solid-svg-icons';
-    
+    import { faMultiply} from '@fortawesome/free-solid-svg-icons';
+    import Tags from '../../../components/tags.svelte';
     </script>
 
-<div class="inline-block pl-10 text-lg breadcrumbs text-[#5832A1]">
-    <ul> 
-        <li>
-            <a>Assets</a>
-        </li>
-        <li>
-            <a>Goal</a>
-        </li> 
+<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="">Assets</a></li>
+        <li><a href="">Goal</a></li>
         <li>Create New</li>
     </ul>
 </div>
@@ -34,7 +31,7 @@
             </div>
 
             <div class="w-2/3">
-                <input type="text" required placeholder="" class="input input-bordered input-info w-full "/>
+                <input type="text" required placeholder="Enter goal name here..." class="input input-bordered input-info w-full "/>
             </div>
         </div>
 
@@ -47,7 +44,7 @@
             </div>
             
             <div class="w-2/3">
-                <textarea class="textarea textarea-info w-full" placeholder="" />
+                <textarea class="textarea textarea-info w-full" placeholder="Enter goal description here..." />
             </div>
         </div>
         
@@ -60,7 +57,7 @@
             </div>
             
             <div class="w-2/3">
-                <input type="text" placeholder="" class="input input-bordered input-info w-full "/>
+                <Tags placeholder={'Enter a tags here...'} />
             </div>
         </div>
 
