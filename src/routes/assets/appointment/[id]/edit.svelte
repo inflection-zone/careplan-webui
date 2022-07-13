@@ -1,29 +1,37 @@
 <script>
 	// @ts-nocheck
-
 	import Fa from 'svelte-fa';
 	import { faMultiply } from '@fortawesome/free-solid-svg-icons';
-	import Tags from '../../../components/tags.svelte';
+	import Tags from '../../../../components/tags.svelte';
+	let tags = ['Maternity', 'Neo-natal-care'];
 </script>
 
-<div class=" breadcrumbs text-xl  text-[#7165E3] ml-14 mt-10">
+<div class=" breadcrumbs text-xl text-[#7165E3] ml-14 mt-5">
 	<ul>
-		<li><a href="/">Home</a></li>
+		<li><a href="">Home</a></li>
 		<li><a href="">Assets</a></li>
 		<li><a href="">Appointment</a></li>
-		<li>Create New</li>
+		<li>Edit</li>
 	</ul>
 </div>
-
-<form class="w-full max-w-4xl  bg-[#ECE4FC] mt-24  rounded-lg mx-auto">
-	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
-		<div class="ml-3 relative flex flex-row text-white text-xl">
-			Create New Appointment
-			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+<div class=" flex justify-center mt-5 flex-col items-center ">
+    <form class="w-full max-w-4xl bg-[#ECE4FC] rounded-lg mx-auto">
+        <div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
+            <div class="ml-3 relative flex flex-row text-white text-xl">
+                Edit Appointment
+			<a href="/assets/appointment/[id]/view">
+				<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+			</a>
 		</div>
 	</div>
-
 	<div class="flex items-center mb-4 mt-10 mx-16">
+		<div class="w-1/3">
+			<!-- svelte-ignore a11y-label-has-associated-control -->
+			<label class="lable-text"> Asset Code </label>
+		</div>
+		<div class="w-2/3">APPOINTMENT-CC-2</div>
+	</div>
+	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label class="lable-text"> Name* </label>
@@ -33,11 +41,11 @@
 				type="text"
 				required
 				placeholder="Enter appointment name here..."
+				value="Nutrition"
 				class="input input-bordered input-info w-full "
 			/>
 		</div>
 	</div>
-
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -47,18 +55,17 @@
 			<textarea
 				class="textarea textarea-info w-full"
 				placeholder="Enter appointment description here..."
+				value="Studies confirm that working out with a partner significantly increases time spent exercising."
 			/>
 		</div>
 	</div>
-
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label class="lable-text"> AppointmentType </label>
+			<label class="lable-text"> Appointment Type </label>
 		</div>
 		<div class="w-2/3">
 			<select class="select select-info w-full ">
-				<option disabled selected>Select appointment type</option>
 				<option>Doctor</option>
 				<option>Lab</option>
 				<option>Physiotherapy</option>
@@ -66,19 +73,15 @@
 			</select>
 		</div>
 	</div>
-
-	<div class="flex items-center mb-4 my-4 mx-16">
+	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label class="lable-text"> Tags </label>
 		</div>
 		<div class="w-2/3">
-			<div class="input input-bordered input-info w-full ">
-				<Tags placeholder={'Enter a tags here...'} />
-			</div>
+			<Tags {tags} placeholder={'Enter a tags here...'} />
 		</div>
 	</div>
-
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
@@ -90,11 +93,16 @@
 			</select>
 		</div>
 	</div>
-
-	<div class="flex items-center mt-10 mx-16">
-		<div class="w-3/4" />
+	<div class="flex items-center my-10 mx-16">
+		<div class="w-1/2" />
 		<div class="w-1/4 ">
-			<button class="btn btn-primary w-full mb-10 "> Submit </button>
+			<button class="btn  btn-outline lg:w-40 sm:w-32 ml-8 "> Reset </button>
 		</div>
-	</div>
-</form>
+		<div class="w-1/4">
+			<a href="/assets/appointment/[id]/view">
+				<button class="btn btn-primary lg:w-40 sm:w-32 ml-8 "> Submit </button>
+			</a>
+            </div>
+        </div>
+    </form>
+</div>
