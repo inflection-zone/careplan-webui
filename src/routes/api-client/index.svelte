@@ -21,7 +21,7 @@
 
 <Navbar />
 <!-- <Sidebar /> -->
-<div class=" flex justify-center flex-col  items-center mx-14 ">
+<div class=" flex justify-center flex-col  items-center mx-14 mt-4 ">
 	<div class="flex flex-row ">
 		<div class=" form-control ">
 			<h1 class="mb-3 " />

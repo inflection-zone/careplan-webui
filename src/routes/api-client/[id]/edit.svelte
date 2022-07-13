@@ -1,7 +1,7 @@
 <script>
 	import Fa from 'svelte-fa';
 	import { faCalendar, faMultiply } from '@fortawesome/free-solid-svg-icons';
-	import Navbar from '../../components/navbar/navbar.svelte';
+	import Navbar from '../../../components/navbar/navbar.svelte';
 </script>
 
 <Navbar />
@@ -16,10 +16,10 @@
 
 <div class=" flex justify-center mt-5 flex-col items-center ">
 	<form class="w-full max-w-4xl bg-[#ECE4FC] rounded-lg mx-auto">
-		<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
+		<div class="w-full  h-14 rounded-t-lg p-3  bg-primary">
 			<div class="ml-3 relative flex flex-row text-white text-xl">
 				Edit Client
-				<a href="/api-client/view">
+				<a href="/api-client/[id]/view">
 					<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 " /></a
 				>
 			</div>
@@ -126,12 +126,11 @@
 				<div class="relative flex items-center ">
 					<input
 						type="text"
-						required
 						placeholder=""
 						value="04-07-2023"
 						class="input input-bordered input-info w-full "
 					/>
-					<Fa icon={faCalendar} size="lg" class="absolute right-0 pr-3  pointer-events-none" />
+					<Fa icon={faCalendar} size="lg" class="absolute right-0 pr-3 " />
 				</div>
 			</div>
 		</div>
@@ -142,7 +141,7 @@
 				<button class="btn  btn-outline lg:w-40 sm:w-32 ml-8 "> Reset </button>
 			</div>
 			<div class="w-1/4">
-				<a href="/api-client/view">
+				<a href="/api-client/[id]/view">
 					<button class="btn btn-primary lg:w-40 sm:w-32 ml-8 "> Submit </button>
 				</a>
 			</div>

@@ -2,14 +2,14 @@
     // @ts-nocheck
     import Fa from 'svelte-fa';
     import { faMultiply } from '@fortawesome/free-solid-svg-icons';
-    import Tags from '../../../components/tags.svelte';
+    import Tags from '../../../../components/tags.svelte';
     let tags = ['Maternity', 'Neo-natal-care'];
 </script>
 <div class=" breadcrumbs text-xl text-[#7165E3] ml-14 mt-5">
     <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Assets</a></li>
-        <li><a href="">Appointment</a></li>
+        <li><a href="">Assessment</a></li>
         <li>Edit</li>
     </ul>
 </div>
@@ -17,8 +17,10 @@
     <form class="w-full max-w-4xl bg-[#ECE4FC] rounded-lg mx-auto">
         <div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
             <div class="ml-3 relative flex flex-row text-white text-xl">
-                Edit Appointment
-                <Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+                Edit Assessment
+                <a href="/assets/assessment/[id]/view">
+                <Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 " />
+            </a>
             </div>
         </div>
         <div class="flex items-center mb-4 mt-10 mx-16">
@@ -26,7 +28,7 @@
                 <!-- svelte-ignore a11y-label-has-associated-control -->
                 <label class="lable-text"> Asset Code </label>
             </div>
-            <div class="w-2/3">APPOINTMENT-CC-2</div>
+            <div class="w-2/3">ASSESSMENT-HF-12</div>
         </div>
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
@@ -37,7 +39,7 @@
                 <input
                     type="text"
                     required
-                    placeholder="Enter appointment name here..."
+                    placeholder="Enter assessment name here..."
                     value="Nutrition"
                     class="input input-bordered input-info w-full "
                 />
@@ -51,21 +53,21 @@
             <div class="w-2/3">
                 <textarea
                     class="textarea textarea-info w-full"
-                    placeholder="Enter appointment description here..."
-                    value="Studies confirm that working out with a partner significantly increases time spent exercising."
+                    placeholder="Enter assessment description here..."
+                    value="Studies confirm that working out with a partner ..."
                 />
             </div>
         </div>
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
-                <label class="lable-text"> AppointmentType </label>
+                <label class="lable-text"> Template </label>
             </div>
             <div class="w-2/3">
                 <textarea
                     class="textarea textarea-info w-full"
-                    placeholder="Enter appointmenttype here..."
-                    value="Doctor"
+                    placeholder="Enter assessment template here..."
+                    value="abc"
                 />
             </div>
         </div>
@@ -95,7 +97,9 @@
                 <button class="btn  btn-outline lg:w-40 sm:w-32 ml-8 "> Reset </button>
             </div>
             <div class="w-1/4">
+                <a href="/assets/assessment/[id]/view">
                 <button class="btn btn-primary lg:w-40 sm:w-32 ml-8 "> Submit </button>
+            </a>
             </div>
         </div>
     </form>

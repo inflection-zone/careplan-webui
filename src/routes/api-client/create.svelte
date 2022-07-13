@@ -2,14 +2,23 @@
 	import Fa from 'svelte-fa';
 	import { faCalendar, faMultiply } from '@fortawesome/free-solid-svg-icons';
 	import Navbar from '../../components/navbar/navbar.svelte';
+
+	let name = '';
+	let contactFirstName = '';
+	let contactLastName = '';
+	let phone = '';
+	let email = '';
+	let password = '';
+	let conformPassword = '';
+	let vaildTill = '';
 </script>
 
 <Navbar />
 
 <div class=" breadcrumbs text-3xl text-[#7165E3] ml-14 mt-10">
 	<ul>
-		<li><a href="/api-client">Home</a></li>
-		<li><a href="/api-client/view">Clients</a></li>
+		<li><a href="">Home</a></li>
+		<li><a href="/api-client">Clients</a></li>
 		<li>Create New</li>
 	</ul>
 </div>
@@ -34,6 +43,7 @@
 					required
 					placeholder="Enter client name here..."
 					class="input input-bordered input-info w-full "
+					bind:value={name}
 				/>
 			</div>
 		</div>
@@ -48,6 +58,7 @@
 					type="text"
 					placeholder="Enter client first name of the client contact person here..."
 					class="input input-bordered input-info w-full "
+					bind:value={contactFirstName}
 				/>
 			</div>
 		</div>
@@ -62,6 +73,7 @@
 					type="text"
 					placeholder="Enter client last name of the client contact person here..."
 					class="input input-bordered input-info w-full "
+					bind:value={contactLastName}
 				/>
 			</div>
 		</div>
@@ -83,6 +95,7 @@
 					type="number"
 					placeholder="Enter client phone here..."
 					class="input input-bordered input-info w-full max-w-md"
+					bind:value={phone}
 				/>
 			</div>
 		</div>
@@ -98,6 +111,7 @@
 					required
 					placeholder="Enter client email here..."
 					class="input input-bordered input-info w-full "
+					bind:value={email}
 				/>
 			</div>
 		</div>
@@ -113,6 +127,7 @@
 					required
 					placeholder="Enter password here..."
 					class="input input-bordered input-info w-full "
+					bind:value={password}
 				/>
 			</div>
 		</div>
@@ -128,6 +143,7 @@
 					required
 					placeholder="Conform password here..."
 					class="input input-bordered input-info w-full "
+					bind:value={conformPassword}
 				/>
 			</div>
 		</div>
@@ -141,11 +157,11 @@
 				<div class="relative flex items-center ">
 					<input
 						type="text"
-						required
 						placeholder="05-07-2022"
 						class="input input-bordered input-info w-full "
+						bind:value={vaildTill}
 					/>
-					<Fa icon={faCalendar} size="lg" class="absolute right-0 pr-3  pointer-events-none" />
+					<Fa icon={faCalendar} size="lg" class="absolute right-0 pr-3 " />
 				</div>
 			</div>
 		</div>

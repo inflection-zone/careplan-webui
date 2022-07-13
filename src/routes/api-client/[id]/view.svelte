@@ -83,7 +83,7 @@
 	<div class="flex items-center mt-10 mx-16">
 		<div class="w-5/6" />
 		<div class="w-1/6 ">
-			<a href="/api-client/edit">
+			<a href="/api-client/[id]/edit">
 				<button class="btn  btn-outline w-full mb-10 mr-4">
 					Edit
 

@@ -6,7 +6,7 @@
 	import Tags from '../../../components/tags.svelte';
 </script>
 
-<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
+<div class=" breadcrumbs text-xl  text-[#7165E3] ml-14 mt-10">
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="">Assets</a></li>
