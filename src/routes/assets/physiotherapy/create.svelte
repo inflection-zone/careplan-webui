@@ -50,7 +50,7 @@
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
-			<label class="lable-text"> RecommendedDurationMin </label>
+			<label class="lable-text"> Recommended Duration Min </label>
 		</div>
 		<div class="w-2/3">
 			<input

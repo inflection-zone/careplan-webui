@@ -20,8 +20,8 @@
 </script>
 
 <Navbar />
-<Sidebar />
-<div class=" flex justify-center flex-col  items-center mx-14 ">
+<!-- <Sidebar /> -->
+<div class=" flex justify-center flex-col  items-center mx-14 mt-4 ">
 	<div class="flex flex-row ">
 		<div class=" form-control ">
 			<h1 class="mb-3 " />
@@ -31,7 +31,9 @@
 			</div>
 		</div>
 		<div>
+			<a href="/api-client/create">
 			<Fa icon={faCirclePlus} size="4x" class="ml-10" />
+		</a>
 			<p class="ml-10 mt-2">Add New</p>
 		</div>
 	</div>
@@ -57,7 +59,7 @@
 						<td>{cell}</td>
 					{/each}
 					<td>
-						<Fa icon={faPencil} size="lg" />
+						<a href="/api-client/edit"><Fa icon={faPencil} size="lg" /></a>
 					</td>
 					<td>
 						<Fa icon={faTrash} size="lg" />

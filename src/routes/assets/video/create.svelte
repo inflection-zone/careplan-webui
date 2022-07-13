@@ -44,7 +44,7 @@
 		<div class="w-2/3">
 			<input
 				type="text"
-				placeholder="Enter vide Transcript here..."
+				placeholder="Enter video transcript here..."
 				class="input input-bordered input-info w-full "
 			/>
 		</div>

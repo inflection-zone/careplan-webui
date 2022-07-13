@@ -1,14 +1,13 @@
 <script>
+	// @ts-nocheck
 	import Fa from 'svelte-fa';
 	import { faMultiply } from '@fortawesome/free-solid-svg-icons';
-
-	// @ts-ignore
 	import Tags from '../../../components/tags.svelte';
 	import Navbar from '../../../components/navbar/navbar.svelte';
 </script>
 
 <Navbar />
-<div class=" breadcrumbs text-lg  text-[#7165E3] ml-14 mt-10">
+<div class=" breadcrumbs text-xl  text-[#7165E3] ml-14 mt-10">
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="">Assets</a></li>
@@ -21,7 +20,7 @@
 	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
 		<div class="ml-3 relative flex flex-row text-white text-xl">
 			Create New Action Plan
-			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 " />
 		</div>
 	</div>
 
@@ -59,7 +58,7 @@
 			<label class="lable-text"> Tags </label>
 		</div>
 		<div class="w-2/3">
-			<Tags />
+			<Tags placeholder={'Enter a tags here...'} />
 		</div>
 	</div>
 
@@ -78,7 +77,7 @@
 	<div class="flex items-center mt-10 mx-16">
 		<div class="w-3/4" />
 		<div class="w-1/4 ">
-			<button class="btn btn-primary w-full mb-10 "> Submit </button>
+			<button class="btn btn-primary w-full mb-10 ">Submit</button>
 		</div>
 	</div>
 </form>
