@@ -2,9 +2,10 @@
     // @ts-nocheck
     import Fa from 'svelte-fa';
     import { faMultiply } from '@fortawesome/free-solid-svg-icons';
-    import Tags from '../../../components/tags.svelte';
+    import Tags from '../../../../components/tags.svelte';
     let tags = ['Maternity', 'Neo-natal-care'];
 </script>
+
 <div class=" breadcrumbs text-xl text-[#7165E3] ml-14 mt-5">
     <ul>
         <li><a href="">Home</a></li>
@@ -13,14 +14,17 @@
         <li>Edit</li>
     </ul>
 </div>
+
 <div class=" flex justify-center mt-5 flex-col items-center ">
     <form class="w-full max-w-4xl bg-[#ECE4FC] rounded-lg mx-auto">
         <div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
             <div class="ml-3 relative flex flex-row text-white text-xl">
                 Edit Consultation
-                <Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+                <a href="/assets/consultation/[id]/view">
+                <Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 " /></a>
             </div>
         </div>
+
         <div class="flex items-center mb-4 mt-10 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -28,6 +32,7 @@
             </div>
             <div class="w-2/3">CONSULTATION-CC-2</div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -43,6 +48,7 @@
                 />
             </div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -63,11 +69,11 @@
                 <label class="lable-text"> ConsultationType </label>
             </div>
             <div class="w-2/3">
-                <textarea
-                    class="textarea textarea-info w-full"
-                    placeholder="Enter consultationtype here..."
-                    value="Tele-consultation"
-                />
+                <select class="select select-info w-full ">
+                    <option>Tele-consultation</option>
+                    <option>Visit-consultation</option>
+                    <option>Other</option>
+                </select>
             </div>
         </div>
         <div class="flex items-center my-4 mx-16">
@@ -79,6 +85,7 @@
                 <Tags {tags} placeholder={'Enter a tags here...'} />
             </div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -90,13 +97,16 @@
                 </select>
             </div>
         </div>
+
         <div class="flex items-center my-10 mx-16">
             <div class="w-1/2" />
             <div class="w-1/4 ">
                 <button class="btn  btn-outline lg:w-40 sm:w-32 ml-8 "> Reset </button>
             </div>
             <div class="w-1/4">
+                <a href="/assets/consultation/[id]/view">
                 <button class="btn btn-primary lg:w-40 sm:w-32 ml-8 "> Submit </button>
+                </a>
             </div>
         </div>
     </form>

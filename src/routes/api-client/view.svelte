@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 <script>
 	import Fa from 'svelte-fa';
 	import { faMultiply, faPen, faCopy, faEye } from '@fortawesome/free-solid-svg-icons';
@@ -94,5 +93,3 @@
 		</div>
 	</div>
 </form>
-=======
->>>>>>> origin/Stabilization
