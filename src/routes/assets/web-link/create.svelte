@@ -10,7 +10,7 @@
 <form class="w-full max-w-4xl  bg-[#ECE4FC] mt-24  rounded-lg mx-auto">
 	<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
 		<div class="ml-3 relative flex flex-row text-white text-xl">
-			Create New web Link
+			Create New Web Link
 
 			<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
 		</div>

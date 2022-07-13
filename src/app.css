@@ -1,8 +1,15 @@
 /* Write your global styles here, in PostCSS syntax */
 
 @import '@fontsource/fira-mono';
+@tailwind components;
 
+@tailwind utilities;
 @tailwind base;
+
+label {
+font-weight: 600;
+--label-text-color: #5832A1;
+}
 
 /* :root {
 	font-family: Arial, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
@@ -110,6 +117,4 @@ button:focus:not(:focus-visible) {
 	}
 } */
 
-@tailwind components;
 
-@tailwind utilities;

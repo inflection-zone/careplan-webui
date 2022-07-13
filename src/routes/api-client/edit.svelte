@@ -6,7 +6,7 @@
 
 <Navbar />
 
-<div class=" breadcrumbs text-3xl text-[#7165E3] ml-14 mt-10">
+<div class=" breadcrumbs text-xl text-[#7165E3] ml-14 mt-5">
 	<ul>
 		<li><a href="/api-client">Home</a></li>
 		<li><a href="/api-client/view">Clients</a></li>
@@ -19,20 +19,21 @@
 		<div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
 			<div class="ml-3 relative flex flex-row text-white text-xl">
 				Edit Client
-				<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+				<a href="/api-client/view">
+					<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 " /></a
+				>
 			</div>
 		</div>
 
-        <div class="flex items-center mb-4 mt-10 mx-16">
-            <div class="w-1/3">
-                <!-- svelte-ignore a11y-label-has-associated-control -->
-                <label class="lable-text text-[#5832A1]"> Client Code </label>
-            </div>
-            <div class="w-2/3 text-[#5832A1]">
-                <p>JNVKSORG</p>
-            </div>
-        </div>
 		<div class="flex items-center mb-4 mt-10 mx-16">
+			<div class="w-1/3">
+				<!-- svelte-ignore a11y-label-has-associated-control -->
+				<label class="lable-text"> Client Code </label>
+			</div>
+			<div class="w-2/3">JNVKSORG</div>
+		</div>
+
+		<div class="flex items-center my-4 mx-16">
 			<div class="w-1/3">
 				<!-- svelte-ignore a11y-label-has-associated-control -->
 				<label class="lable-text"> Name* </label>
@@ -42,6 +43,7 @@
 					type="text"
 					required
 					placeholder="Enter client name here..."
+					value="Jan Vikas"
 					class="input input-bordered input-info w-full "
 				/>
 			</div>
@@ -56,6 +58,7 @@
 				<input
 					type="text"
 					placeholder="Enter client first name of the client contact person here..."
+					value="John"
 					class="input input-bordered input-info w-full "
 				/>
 			</div>
@@ -70,6 +73,7 @@
 				<input
 					type="text"
 					placeholder="Enter client last name of the client contact person here..."
+					value="Doe"
 					class="input input-bordered input-info w-full "
 				/>
 			</div>
@@ -81,7 +85,7 @@
 				<label class="lable-text"> Phone* </label>
 			</div>
 			<div class="w-1/4 ">
-				<select class="select select-info w-28 ml-16 ">
+				<select class="select select-info lg:w-28 sm:w-24 sm:ml-14  lg:ml-16 ">
 					<option>+91</option>
 					<option>+94</option>
 					<option>+93</option>
@@ -91,6 +95,7 @@
 				<input
 					type="number"
 					placeholder="Enter client phone here..."
+					value="7981456221"
 					class="input input-bordered input-info w-full max-w-md"
 				/>
 			</div>
@@ -106,6 +111,7 @@
 					type="email"
 					required
 					placeholder="Enter client email here..."
+					value="johndoe@janvikas.org"
 					class="input input-bordered input-info w-full "
 				/>
 			</div>
@@ -121,7 +127,8 @@
 					<input
 						type="text"
 						required
-						placeholder="05-07-2022"
+						placeholder=""
+						value="04-07-2023"
 						class="input input-bordered input-info w-full "
 					/>
 					<Fa icon={faCalendar} size="lg" class="absolute right-0 pr-3  pointer-events-none" />
@@ -129,13 +136,15 @@
 			</div>
 		</div>
 
-		<div class="flex items-center gap-10 my-10 mx-16">
-			<div class="w-3/6" />
-            <div class="w-1/4 ">
-				<button class="btn btn-primary w-full "> Reset </button>
-			</div>
+		<div class="flex items-center my-10 mx-16">
+			<div class="w-1/2" />
 			<div class="w-1/4 ">
-				<button class="btn btn-primary w-full"> Submit </button>
+				<button class="btn  btn-outline lg:w-40 sm:w-32 ml-8 "> Reset </button>
+			</div>
+			<div class="w-1/4">
+				<a href="/api-client/view">
+					<button class="btn btn-primary lg:w-40 sm:w-32 ml-8 "> Submit </button>
+				</a>
 			</div>
 		</div>
 	</form>

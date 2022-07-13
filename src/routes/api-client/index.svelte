@@ -1,7 +1,7 @@
 <script>
 	import Fa from 'svelte-fa';
 	import { faCirclePlus, faPencil, faTrash, faSearch } from '@fortawesome/free-solid-svg-icons';
-	// import Sidebar from '../../components/sidebar/sidebar.svelte';
+	import Sidebar from '../../components/sidebar/sidebar.svelte';
 	//  import { paginate, LightPaginationNav } from 'svelte-paginate'
 	import Navbar from '../../components/navbar/navbar.svelte';
 	let columns = ['Client', 'Contact Name', 'Phone', 'Email', 'Onbording Date'];
@@ -31,7 +31,9 @@
 			</div>
 		</div>
 		<div>
+			<a href="/api-client/create">
 			<Fa icon={faCirclePlus} size="4x" class="ml-10" />
+		</a>
 			<p class="ml-10 mt-2">Add New</p>
 		</div>
 	</div>
@@ -57,7 +59,7 @@
 						<td>{cell}</td>
 					{/each}
 					<td>
-						<Fa icon={faPencil} size="lg" />
+						<a href="/api-client/edit"><Fa icon={faPencil} size="lg" /></a>
 					</td>
 					<td>
 						<Fa icon={faTrash} size="lg" />
