@@ -11,10 +11,10 @@
 	}
 </script>
 
-<main class="w-screen overflow-x-auto self-center">
-	<div class="bg-back-ground w-screen">
+<main class="w-full h-full overflow-x-auto self-center box-border">
+	<div class=" bg-back-ground h-screen fixed ">
 		<div class="h-10 w-screen shadow-xl mb-4 bg-[#7165E3]" />
-		<center>
+		<center class=" ">
 			<div class=" flex justify-center flex-col items-center m-14">
 				<img
 					class="ct-image w-36 mb-5"
@@ -59,11 +59,16 @@
 						</label>
 					</div>
 				</form>
-				<div class="h-20 mb-4 w-screen" />
 			</div>
+			<footer class="footer footer-center fixed bottom-0 h-11 text-[#ffffff] bg-[#5832A1]">
+				<p>© 2022 REAN Foundation</p>
+			</footer>
 		</center>
-		<footer class="footer footer-center h-11 text-[#ffffff] bg-[#5832A1]">
-			<p>© 2022 REAN Foundation</p>
-		</footer>
+		
+
+
+		
+	
 	</div>
+	
 </main>
