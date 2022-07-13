@@ -72,8 +72,9 @@
 					<figure class="max-w-screen-2xl">
 						<img src={bigLinechartLogo} class="h-14 " />
 					</figure>
-					<div class="grid grid-rows-2 grid-flow-col gap-2">
-						
+					<div class="flex flex-col  gap-2">
+						<progress class="progress-info w-full h-6" value="40" max="100"></progress>
+                        <progress class="progress-info w-96 h-6" value="70" max="100"></progress>
 					</div>
 					
 				</div>
