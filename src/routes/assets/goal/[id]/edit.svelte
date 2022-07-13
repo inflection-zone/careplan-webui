@@ -2,32 +2,37 @@
     // @ts-nocheck
     import Fa from 'svelte-fa';
     import { faMultiply } from '@fortawesome/free-solid-svg-icons';
-    import Tags from '../../../components/tags.svelte';
+    import Tags from '../../../../components/tags.svelte';
     let tags = ['Maternity', 'Neo-natal-care'];
 </script>
+
 <div class=" breadcrumbs text-xl text-[#7165E3] ml-14 mt-5">
     <ul>
         <li><a href="">Home</a></li>
         <li><a href="">Assets</a></li>
-        <li><a href="">Medication</a></li>
+        <li><a href="">Goal</a></li>
         <li>Edit</li>
     </ul>
 </div>
+
 <div class=" flex justify-center mt-5 flex-col items-center ">
     <form class="w-full max-w-4xl bg-[#ECE4FC] rounded-lg mx-auto">
         <div class="w-full  h-14 rounded-t-lg p-3  bg-[#7165E3]">
             <div class="ml-3 relative flex flex-row text-white text-xl">
-                Edit Medication
-                <Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+                Edit Goal
+                <a href="/assets/goal/[id]/view">
+                <Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3" /></a>
             </div>
         </div>
+
         <div class="flex items-center mb-4 mt-10 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
                 <label class="lable-text"> Asset Code </label>
             </div>
-            <div class="w-2/3"> MEDICATION-CC-2</div>
+            <div class="w-2/3">GOAL-CC-2</div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -37,12 +42,13 @@
                 <input
                     type="text"
                     required
-                    placeholder="Enter medication name here..."
-                    value="Take your medication"
+                    placeholder="Enter goal name here..."
+                    value="Reduce Fasting Blood Glucose"
                     class="input input-bordered input-info w-full "
                 />
             </div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -51,11 +57,12 @@
             <div class="w-2/3">
                 <textarea
                     class="textarea textarea-info w-full"
-                    placeholder="Enter medication description here..."
+                    placeholder="Enter exercise description here..."
                     value="Studies confirm that working out with a partner significantly increases time spent exercising."
                 />
             </div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -65,6 +72,7 @@
                 <Tags {tags} placeholder={'Enter a tags here...'} />
             </div>
         </div>
+
         <div class="flex items-center my-4 mx-16">
             <div class="w-1/3">
                 <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -76,13 +84,16 @@
                 </select>
             </div>
         </div>
+
         <div class="flex items-center my-10 mx-16">
             <div class="w-1/2" />
             <div class="w-1/4 ">
                 <button class="btn  btn-outline lg:w-40 sm:w-32 ml-8 "> Reset </button>
             </div>
             <div class="w-1/4">
+                <a href="/assets/goal/[id]/view">
                 <button class="btn btn-primary lg:w-40 sm:w-32 ml-8 "> Submit </button>
+                </a>
             </div>
         </div>
     </form>

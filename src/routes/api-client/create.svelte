@@ -15,7 +15,7 @@
 
 <Navbar />
 
-<div class=" breadcrumbs text-xl text-[#7165E3] ml-14 mt-10">
+<div class=" breadcrumbs text-3xl text-[#7165E3] ml-14 mt-10">
 	<ul>
 		<li><a href="">Home</a></li>
 		<li><a href="/api-client">Clients</a></li>
@@ -84,7 +84,7 @@
 				<label class="lable-text"> Phone* </label>
 			</div>
 			<div class="w-1/4 ">
-				<select class="select select-info lg:w-28 sm:w-24 sm:ml-14  lg:ml-16  ">
+				<select class="select select-info w-28 ml-16 ">
 					<option>+91</option>
 					<option>+94</option>
 					<option>+93</option>
