@@ -5,10 +5,10 @@
 //  import Sidebar from "../components/sidebar/sidebar.svelte";
 </script>
 
- <!-- <Navbar /> -->
- <!-- <Sidebar/>  -->
+ <!-- <Navbar />
+  <Sidebar/>   -->
 
-<Login />
+ <Login /> 
 
 
 <main>

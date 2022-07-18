@@ -15,7 +15,7 @@
 		<li>View</li>
 	</ul>
 </div>
-<form class="w-full max-w-4xl  bg-[#ECE4FC] mt-12  rounded-lg mx-auto">
+<form class="w-full max-w-4xl  bg-[#ECE4FC] mt-12  rounded-lg mx-auto shadow-bottom-right">
 	<div class="w-full  h-14 rounded-t-lg p-3  bg-primary">
 		<div class="ml-3 relative flex flex-row text-white text-xl">
 			Priority - Weight management
@@ -56,7 +56,7 @@
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label class="lable-text"> Version </label>
 		</div>
-		<div class="w-2/3">V1</div>
+		<div class="w-2/3">1.0</div>
 	</div>
 	<div class="flex items-center mt-10 mx-16">
 		<div class="w-5/6" />
