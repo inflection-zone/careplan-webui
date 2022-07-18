@@ -76,7 +76,7 @@
 			<label class="lable-text"> Version </label>
 		</div>
 		<div class="w-2/3">
-			V1.0
+			1.0
 		</div>
 	</div>
 

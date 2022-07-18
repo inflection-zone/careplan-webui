@@ -88,9 +88,12 @@
 				<label class="lable-text"> Version </label>
 			</div>
 			<div class="w-2/3">
-				<select class="select select-info w-full ">
-					<option>V1.0</option>
-				</select>
+				<input
+                type="text"
+                value="1.0"
+                placeholder="Enter version here..."
+                class="input input-bordered input-info w-full "
+            />
 			</div>
 		</div>
 		<div class="flex items-center my-10 mx-16">

@@ -80,7 +80,7 @@
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label class="lable-text"> Version </label>
 		</div>
-		<div class="w-2/3">V1.0</div>
+		<div class="w-2/3">1.0</div>
 	</div>
 
 	<div class="flex items-center mt-10 mx-16">
