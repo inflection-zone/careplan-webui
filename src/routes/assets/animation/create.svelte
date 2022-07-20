@@ -68,21 +68,22 @@
 			<label class="lable-text"> Tags </label>
 		</div>
 		<div class="w-2/3">
-			<div class="input input-bordered input-info w-full ">
-				<Tags placeholder={'Enter a tags here...'} />
-			</div>
+			<Tags placeholder={'Enter a tags here...'} />
 		</div>
 	</div>
-
+	
 	<div class="flex items-center my-4 mx-16">
 		<div class="w-1/3">
 			<!-- svelte-ignore a11y-label-has-associated-control -->
 			<label class="lable-text"> Version </label>
 		</div>
 		<div class="w-2/3">
-			<select class="select select-info w-full ">
-				<option>V1.0</option>
-			</select>
+			<input
+                type="text"
+                value="1.0"
+                placeholder="Enter version here..."
+                class="input input-bordered input-info w-full "
+            />
 		</div>
 	</div>
 
