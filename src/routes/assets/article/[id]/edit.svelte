@@ -20,7 +20,7 @@
             <div class="ml-3 relative flex flex-row text-white text-xl">
                 Edit Article
 			<a href="/assets/article/[id]/view">
-				<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3 pointer-events-none" />
+				<Fa icon={faMultiply} size="lg" class="absolute right-0 pr-3" />
 			</a>
 		</div>
 	</div>
@@ -89,9 +89,12 @@
 			<label class="lable-text"> Version </label>
 		</div>
 		<div class="w-2/3">
-			<select class="select select-info w-full ">
-				<option>V1.0</option>
-			</select>
+			<input
+                type="text"
+                value="1.0"
+                placeholder="Enter version here..."
+                class="input input-bordered input-info w-full "
+            />
 		</div>
 	</div>
 	<div class="flex items-center my-10 mx-16">
