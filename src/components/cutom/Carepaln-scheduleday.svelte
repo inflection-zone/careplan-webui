@@ -1,6 +1,8 @@
 <script>
 
-  import Dayinfo from "./day1info.svelte"
+
+
+  import Scheduleday from "../../routes/careplan/scheduleday.svelte"
 
 
    let days=["Day 1","Day 2","Day 3","Day 4","Day 5","Day 6","Day 7"];
@@ -16,7 +18,7 @@
       {day}
     </div>
     <div class="collapse-content"> 
-          <Dayinfo  />
+          <Scheduleday  />
     </div>
   </div> 
   </div>

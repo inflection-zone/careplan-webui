@@ -1,19 +1,16 @@
 <script>
 	// @ts-nocheck
-	import Careplanform from "../../components/cutom/careplanform.svelte";
-	import Scheduleinfo from "../../components/cutom/scheduleinfo.svelte";
+	import Careplanform from '../../components/cutom/careplanform.svelte';
+import Schedulebtn from '../../components/cutom/schedulebtn.svelte';
+	import Scheduleinfo from '../../components/cutom/schedulebtn.svelte';
 
-    let show=false;
-
-	
+	let show = false;
 </script>
-
 
 <div class=" breadcrumbs text-xl  text-[#7165E3] ml-14 mt-10">
 	<ul>
 		<li><a href="/">Home</a></li>
 		<li><a href="">Carepaln Scheduling</a></li>
-		
 	</ul>
 </div>
 
@@ -24,23 +21,15 @@
 			<div class="flex flex-row ml-2 mb-2">
 				<h3 class="font-bold w-1/3 ">Carepaln Category</h3>
 				<h3 class="font-semibold w-11/12 ">Carepaln Category</h3>
+			</div>
+			<div class="flex flex-row ml-2 mb-2">
+				<h3 class="font-bold w-1/3 ">Carepaln Category</h3>
+				<h3 class="font-semibold w-11/12 ">Carepaln Category</h3>
+			</div>
 		</div>
-		<div class="flex flex-row ml-2 mb-2">
-			<h3 class="font-bold w-1/3 ">Carepaln Category</h3>
-			<h3 class="font-semibold w-11/12 ">Carepaln Category</h3>
-	</div>
-		</div>
-		
-			<!-- svelte-ignore a11y-label-has-associated-control -->
-			
 
 	</div>
-	
-	
-	
-	
 </div>
 
 <Careplanform />
-<Scheduleinfo />
-
+<Schedulebtn/>
